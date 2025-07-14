@@ -18,7 +18,7 @@ Both models are monthly-rebalanced factor portfolios constructed using a univers
 
 ### 🔹 Sentiment-Driven Model
 - All components of the baseline model
-- + Simulated sentiment scores per stock per month (as proxy for real FinBERT pipeline)
+- Simulated sentiment scores per stock per month (as proxy for real FinBERT pipeline)
 - Scores range from -1 to 1, based on sentiment polarity
 
 ---
