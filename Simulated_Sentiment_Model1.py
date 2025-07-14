@@ -17,7 +17,7 @@ def run_simulated_sentiment_strategy(
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
     try:
-        tickers_df = pd.read_csv("Data/companies_all", header=None, names=['ticker'])
+        tickers_df = pd.read_csv("companies_all", header=None, names=['ticker'])
         tickers_df.dropna(inplace=True)
         tickers_df['ticker'] = tickers_df['ticker'].str.strip().str.upper()
         tickers_df = tickers_df[tickers_df['ticker'] != '^GSPC']
