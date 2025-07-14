@@ -12,7 +12,7 @@ def run_baseline_strategy(
     MIN_VALID_STOCKS=30,
 ):
     # load tickers
-    tickers_df = pd.read_csv("Data/companies_all", header=None, names=['ticker'])
+    tickers_df = pd.read_csv("companies_all", header=None, names=['ticker'])
     tickers_df.dropna(inplace=True)
     tickers_df['ticker'] = tickers_df['ticker'].str.strip().str.upper()
     tickers_df = tickers_df[tickers_df['ticker'] != '^GSPC']
