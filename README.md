@@ -23,16 +23,27 @@ Both models are monthly-rebalanced factor portfolios constructed using a univers
 
 ---
 
-## 📊 Performance Summary (2019–2024)
+## 📈 Strategy Comparison
+
+### Model Performance (2019–2024):
 
 | Model       | Annual Return | Volatility | Sharpe |
-|-------------|---------------|------------|--------|
-| Sentiment   | -3.36%        | 7.45%      | -0.45  |
-| Baseline    | -3.26%        | 11.11%     | -0.29  |
+|-------------|----------------|------------|--------|
+| Sentiment   | -3.36%         | 7.45%      | -0.45  |
+| Baseline    | -3.23%         | 11.11%     | -0.29  |
+| S&P 500     | Positive (used as benchmark) | — | — |
+
+- Both strategies underperform the S&P 500 during this period.
+- The sentiment-driven model slightly improves volatility but shows no predictive edge with current simulated data.
+
+---
+
+## 📉 Visual Output
 
 ![Strategy Comparison](strategy_comparison.png)
 
-> Both models underperformed the S&P 500 over the period, reflecting their academic, unoptimized nature.
+- The S&P 500 (black dashed) outperforms both strategies.
+- Sharpe ratios are negative, indicating poor risk-adjusted returns in this backtest.
 
 ---
 
